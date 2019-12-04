@@ -1,8 +1,5 @@
 package projeto;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 
 public class Linha34 implements ILinha {
@@ -22,6 +19,19 @@ public class Linha34 implements ILinha {
 
 			
 
+	}
+
+	@Override
+	public void insertLinhaBanco() {
+		// TODO Auto-generated method stub
+		
+		
+	}
+
+	@Override
+	public void selectLinhaBanco() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
