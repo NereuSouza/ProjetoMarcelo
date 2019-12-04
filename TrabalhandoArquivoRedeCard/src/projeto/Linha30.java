@@ -17,6 +17,10 @@ public class Linha30 implements ILinha {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyy-MM-dd");
 		Date data = sdf.parse(dataTr);
 		
+		String autorizadora = linha.substring(12, 20);
+		
+		String tipoDoc = linha.substring(20,54);
+		String nomeComercial = linha.
 		
 	}
 
