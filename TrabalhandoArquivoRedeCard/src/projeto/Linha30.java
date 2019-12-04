@@ -20,7 +20,9 @@ public class Linha30 implements ILinha {
 		String autorizadora = linha.substring(12, 20);
 		
 		String tipoDoc = linha.substring(20,54);
-		String nomeComercial = linha.
+		String nomeComercial = linha.substring(null,null);
+				
+				
 		
 	}
 
