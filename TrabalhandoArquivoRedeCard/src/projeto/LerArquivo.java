@@ -7,20 +7,15 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.text.ParseException;
 
-import classesAbandonadas.Linha30;
-import classesAbandonadas.Linha32;
-import classesAbandonadas.Linha34;
-
 
 public class LerArquivo {
 
 	public static void main(String[] args) throws ParseException, IOException {
 		// TODO Auto-generated method stub
 		
-		Linha30 linha30 = new Linha30();
-		Linha32 linha32 = new Linha32();
-		Linha34 linha34 = new Linha34();
-		
+		Linha30Dao linha30 = new Linha30Dao();
+		Linha32Dao linha32 = new Linha32Dao();
+		Linha34Dao linha34 = new Linha34Dao();
 		
 		File arquivo1 = new File("C:/Users/NEREU/Downloads/NEFI_TESTE_1908.TXT");
 		FileReader fr = new FileReader(arquivo1);
@@ -35,22 +30,18 @@ public class LerArquivo {
 		case "030":
 			
 			linha30.insertLinhaBanco(linha);
-		/*	
+		
 		case "032":
 			
-			linha32.interpretaLinha(linha);
+			linha32.insertLinhaBanco(linha);
 			
 		case "034":
 			
-			linha34.interpretaLinha(linha);
-			*/
+			linha34.insertLinhaBanco(linha);
+			
 		}
 		
-		/*
-		if (tipoDeRegistro.equals("034")) {
-			linha34.interpretaLinha(linha);
-		}
-		*/
+		
 		}
 		br.close();
 		fr.close();
