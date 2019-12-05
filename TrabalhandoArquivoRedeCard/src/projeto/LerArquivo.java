@@ -7,6 +7,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.text.ParseException;
 
+import classesAbandonadas.Linha30;
+import classesAbandonadas.Linha32;
+import classesAbandonadas.Linha34;
+
 
 public class LerArquivo {
 
