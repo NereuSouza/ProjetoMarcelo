@@ -2,29 +2,15 @@ package projeto;
 
 import java.io.BufferedReader;
 import java.io.File;
-
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.text.ParseException;
 
 public class LerArquivo {
 
 	public static void main(String[] args) throws ParseException, IOException, SQLException {
 		// TODO Auto-generated method stub
-
-		/*
-		 * Conexao con = new Conexao();
-		 * 
-		 * Statement st = con.getConexao().createStatement();
-		 * 
-		 * st.executeQuery("select * from motorista");
-		 * 
-		 * ResultSet rs = st.getResultSet();
-		 * 
-		 */
 
 		Linha30Dao linha30 = new Linha30Dao();
 		Linha32Dao linha32 = new Linha32Dao();
@@ -40,18 +26,18 @@ public class LerArquivo {
 			String tipoDeRegistro = linha.substring(0, 3);
 
 			switch (tipoDeRegistro) {
-			case "030":
+		case "030":
 
 				linha30.insertLinhaBanco(linha);
 
-		/*	case "032":
+		case "032":
 
 				linha32.insertLinhaBanco(linha);
 
 			case "034":
 
 				linha34.insertLinhaBanco(linha);
-*/
+
 			}
 
 		}
