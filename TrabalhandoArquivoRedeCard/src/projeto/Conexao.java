@@ -11,7 +11,7 @@ public class Conexao {
 		
 		try {
 			
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/carro_motorista", "root", "Slave.10");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/lerarquivo", "root", "Slave.10");
 			System.out.println("Conectado com Suceso!!!");
 			
 		}catch(SQLException e){

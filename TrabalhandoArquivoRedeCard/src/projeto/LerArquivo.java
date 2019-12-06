@@ -6,12 +6,13 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.ParseException;
 
 public class LerArquivo {
 
-	public static void main(String[] args) throws ParseException, IOException {
+	public static void main(String[] args) throws ParseException, IOException, SQLException {
 		// TODO Auto-generated method stub
 
 		/*
@@ -43,14 +44,14 @@ public class LerArquivo {
 
 				linha30.insertLinhaBanco(linha);
 
-			case "032":
+		/*	case "032":
 
 				linha32.insertLinhaBanco(linha);
 
 			case "034":
 
 				linha34.insertLinhaBanco(linha);
-
+*/
 			}
 
 		}
