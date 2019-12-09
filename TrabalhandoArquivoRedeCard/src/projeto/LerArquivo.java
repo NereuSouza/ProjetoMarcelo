@@ -4,14 +4,25 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.ParseException;
+
+import javax.swing.JOptionPane;
+
+
+import com.mysql.jdbc.Statement;
 
 public class LerArquivo {
 
 	public static void main(String[] args) throws ParseException, IOException, SQLException {
 		// TODO Auto-generated method stub
-
+		
+		int opcao;
+		
+		opcao = Integer.parseInt(JOptionPane.showInputDialog("Para ler o arquivo digite 1, para ver a soma dos valores lançados digite 2."));
+		
+		if(opcao == 1) {
 		Linha30Dao linha30 = new Linha30Dao();
 		Linha32Dao linha32 = new Linha32Dao();
 		Linha34Dao linha34 = new Linha34Dao();
@@ -45,7 +56,19 @@ public class LerArquivo {
 		fr.close();
 
 		System.out.println("fim");
+		
+		}else if (opcao ==2) {
+			
+			JOptionPane.showMessageDialog(null, SomaValores.somaValores());
+			
+			
+		}else {
+			
+			JOptionPane.showMessageDialog(null, "Opção errada");
+		}
 
 	}
+
+	
 
 }

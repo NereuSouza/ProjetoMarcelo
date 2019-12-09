@@ -1,24 +1,22 @@
 package projeto;
 
 import java.sql.SQLException;
+import java.text.ParseException;
 
 import com.mysql.jdbc.PreparedStatement;
 
 public class Linha34Dao implements ILinha {
 
 	@Override
-	public void insertLinhaBanco(String linha) throws SQLException {
+	public void insertLinhaBanco(String linha) throws SQLException, ParseException {
 		
-
+		
 		int numPVC =Integer.parseInt( linha.substring(3, 12));
 		
-
 		int numDoc = Integer.parseInt(linha.substring(12, 23));
 		
-
 		String dataLanc = linha.substring(23, 32);
 		
-
 		int valorLanc =Integer.parseInt( linha.substring(32, 46));
 		
 		String Cred = linha.substring(46, 48);
