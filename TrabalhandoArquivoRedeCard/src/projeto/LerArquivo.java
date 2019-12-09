@@ -43,7 +43,7 @@ public class LerArquivo {
 
 				linha32.insertLinhaBanco(linha);
 
-			case "034":
+		case "034":
 
 				linha34.insertLinhaBanco(linha);
 
