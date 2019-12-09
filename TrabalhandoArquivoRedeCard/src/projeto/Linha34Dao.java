@@ -8,61 +8,47 @@ public class Linha34Dao implements ILinha {
 
 	@Override
 	public void insertLinhaBanco(String linha) throws SQLException {
-		// TODO Auto-generated method stub
 		
-		int numPVC = Integer.parseInt(linha.substring(3, 12));
-	//	System.out.println("Número do PV Centralizador: " + numPVC);
+
+		int numPVC =Integer.parseInt( linha.substring(3, 12));
+		
 
 		int numDoc = Integer.parseInt(linha.substring(12, 23));
-	//	System.out.println("Número do Documento: " + numDoc);
+		
 
 		String dataLanc = linha.substring(23, 32);
-	//	System.out.println("Data do Lançamento: " + dataLanc);
+		
 
-		int valorLanc = Integer.parseInt(linha.substring(32, 46));
-	//	System.out.println("Valor do Lançamento:" + valorLanc);
-
+		int valorLanc =Integer.parseInt( linha.substring(32, 46));
+		
 		String Cred = linha.substring(46, 48);
-	//	System.out.println("C (crédito): " + Cred);
-
+		
 		int Banco = Integer.parseInt(linha.substring(48, 51));
-	//	System.out.println("Banco: " + Banco);
-
+		
 		int Agencia = Integer.parseInt(linha.substring(51, 57));
-	//	System.out.println("Agência: " + Agencia);
-
+		
 		int ContaC = Integer.parseInt(linha.substring(57, 68));
-	//	System.out.println("Conta Corrente: " + ContaC);
-
+		
 		String dataMovi = linha.substring(67, 75);
-	//	System.out.println("Data do Movimento: " + dataMovi);
-
+		
 		int numRV = Integer.parseInt(linha.substring(76, 85));
-	//	System.out.println("Número do RV: " + numRV);
-
+		
 		String dataRV = linha.substring(84, 92);
-	//	System.out.println("Data do RV: " + dataRV);
-
+		
 		int band = Integer.parseInt(linha.substring(93, 94));
-	//	System.out.println("Bandeira: " + band);
-
+		
 		int tipoTrans = Integer.parseInt(linha.substring(94, 95));
-	//	System.out.println("Tipo de Transação: " + tipoTrans);
-
+		
 		int valorBrutoRV = Integer.parseInt(linha.substring(95, 110));
-	//	System.out.println("Valor Bruto RV:" + valorBrutoRV);
-
+		
 		int valorTaxaDesc = Integer.parseInt(linha.substring(110, 125));
-	//	System.out.println("Valor Taxa de Desconto:" + valorTaxaDesc);
-
+		
 		String numParc = linha.substring(125, 130);
-	//	System.out.println("Número Parcela / Total: " + numParc);
-
+		
 		String statusCred = linha.substring(130, 132);
-	//	System.out.println("Status Crédito - Tabela II: " + statusCred);
-
+		
 		int numPvOrig = Integer.parseInt(linha.substring(132, 140));
-	//	System.out.println("Número PV Original: " + numPvOrig);
+		
 	
 		
 		Conexao con = new Conexao();

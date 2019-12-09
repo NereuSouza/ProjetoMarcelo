@@ -16,7 +16,7 @@ public class LerArquivo {
 		Linha32Dao linha32 = new Linha32Dao();
 		Linha34Dao linha34 = new Linha34Dao();
 
-		File arquivo1 = new File("C:/Users/NEREU/Downloads/NEFI_TESTE_1908.TXT");
+		File arquivo1 = new File("C:\\Users\\nereu.souza\\Downloads\\NEFI_TESTE_1908.TXT");
 		FileReader fr = new FileReader(arquivo1);
 		BufferedReader br = new BufferedReader(fr);
 
